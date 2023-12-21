@@ -28,6 +28,12 @@
     <None Update="Puzzle13\input.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="Puzzle14\input.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Puzzle14\sample.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="Puzzle8\input.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace AdventOfCode2023.Puzzle13
+﻿namespace AdventOfCode2023.Puzzle13
 {
     internal class PartA
     {
@@ -36,18 +30,16 @@ namespace AdventOfCode2023.Puzzle13
         private List<char[][]> Patterns { get; set; }
 
 
-
-        public  int Calculate()
+        public int Calculate()
         {
             return Patterns.Sum(GetReflection);
-
         }
 
         private int GetReflection(char[][] rows)
         {
             if (FindReflection(rows, out var horizontal, 100)) return horizontal;
 
-            var columns = Transpose(rows);
+            var columns = rows.Transpose();
 
             if (FindReflection(columns, out var vertical, 1)) return vertical;
 
@@ -69,13 +61,13 @@ namespace AdventOfCode2023.Puzzle13
 
                 while (isMatch)
                 {
-                    if (leftIndex == 0 || rightIndex == rows.Length-1)
+                    if (leftIndex == 0 || rightIndex == rows.Length - 1)
                     {
                         reflection = curr * multiplier;
                         return true;
                     }
 
-                    isMatch = RowsMatch( rows[--leftIndex], rows[++rightIndex]);
+                    isMatch = RowsMatch(rows[--leftIndex], rows[++rightIndex]);
                 }
             }
 
@@ -90,25 +82,6 @@ namespace AdventOfCode2023.Puzzle13
             }
 
             return true;
-        }
-
-
-        protected static char[][] Transpose(char[][] original)
-        {
-            var transposed = new List<char[]>();
-
-            for (int i = 0; i < original[0].Length; i++)
-            {
-                var transpose = new List<char>();
-                foreach (var originalArray in original)
-                {
-                    transpose.Add(originalArray[i]);
-                }
-
-                transposed.Add(transpose.ToArray());
-            }
-
-            return transposed.ToArray();
         }
     }
 }

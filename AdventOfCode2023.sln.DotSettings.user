@@ -1,10 +1,21 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=455345c7_002Db160_002D4836_002Db514_002De9c7f64deb89/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Part2_MainPuzzle" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=455345c7_002Db160_002D4836_002Db514_002De9c7f64deb89/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Part2_MainPuzzle" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;NUnit3x::91400F23-984A-4553-B657-B164415EDF48::net8.0::AdventOfCode2023.Puzzle12.Challenge.Part2_MainPuzzle&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;NUnit3x::91400F23-984A-4553-B657-B164415EDF48::net8.0::AdventOfCode2023.Puzzle13.Challenge.PartA_Sample&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;NUnit3x::91400F23-984A-4553-B657-B164415EDF48::net8.0::AdventOfCode2023.Puzzle13.Challenge.PartA_MainPuzzle&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;NUnit3x::91400F23-984A-4553-B657-B164415EDF48::net8.0::AdventOfCode2023.Puzzle13.Challenge.PartB_Sample&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;NUnit3x::91400F23-984A-4553-B657-B164415EDF48::net8.0::AdventOfCode2023.Puzzle13.Challenge.PartB_MainPuzzle&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::91400F23-984A-4553-B657-B164415EDF48::net8.0::AdventOfCode2023.Puzzle14.Tests.PartA_Sample&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::91400F23-984A-4553-B657-B164415EDF48::net8.0::AdventOfCode2023.Puzzle14.Tests.PartA_MainPuzzle&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::91400F23-984A-4553-B657-B164415EDF48::net8.0::AdventOfCode2023.Puzzle14.Tests.PartB_Sample&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=af9a68ad_002D7a0f_002D4bc7_002D816f_002Deecfece67f58/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="PartB_Sample" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::91400F23-984A-4553-B657-B164415EDF48::net8.0::AdventOfCode2023.Puzzle14.Tests.PartB_Sample&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::91400F23-984A-4553-B657-B164415EDF48::net8.0::AdventOfCode2023.Puzzle14.Tests.PartA_Sample&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::91400F23-984A-4553-B657-B164415EDF48::net8.0::AdventOfCode2023.Puzzle14.Tests.PartA_MainPuzzle&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::91400F23-984A-4553-B657-B164415EDF48::net8.0::AdventOfCode2023.Puzzle14.Tests.PartB_MainPuzzle&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

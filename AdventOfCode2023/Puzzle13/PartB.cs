@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace AdventOfCode2023.Puzzle13
+﻿namespace AdventOfCode2023.Puzzle13
 {
     internal class PartB
     {
@@ -35,7 +29,7 @@ namespace AdventOfCode2023.Puzzle13
 
         private List<char[][]> Patterns { get; set; }
 
-        private bool HasChange { get; set; }
+        private bool HasSmudge { get; set; }
 
         public int Calculate()
         {
@@ -46,7 +40,7 @@ namespace AdventOfCode2023.Puzzle13
         {
             if (FindReflection(rows, out var horizontal, 100)) return horizontal;
 
-            var columns = Transpose(rows);
+            var columns = rows.Transpose();
 
             if (FindReflection(columns, out var vertical, 1)) return vertical;
 
@@ -58,7 +52,7 @@ namespace AdventOfCode2023.Puzzle13
             reflection = 0;
             for (int curr = 1; curr < rows.Length; curr++)
             {
-                HasChange = false;
+                HasSmudge = false;
                 var leftIndex = curr - 1;
                 var rightIndex = curr;
 
@@ -69,13 +63,13 @@ namespace AdventOfCode2023.Puzzle13
 
                 while (isMatch)
                 {
-                    if ((leftIndex == 0 || rightIndex == rows.Length - 1))
+                    if (leftIndex == 0 || rightIndex == rows.Length - 1)
                     {
-                        if (!HasChange) isMatch = false;
+                        if (!HasSmudge) isMatch = false;
                         else
                         {
                             reflection = curr * multiplier;
-                            return HasChange;
+                            return true;
                         }
                      
                     }
@@ -95,23 +89,12 @@ namespace AdventOfCode2023.Puzzle13
             for (int i = 0; i < left.Length; i++)
             {
                 if (left[i] == right[i]) continue;
-                if (HasChange) return false;
-                HasChange = true;
+                if (HasSmudge) return false;
+                HasSmudge = true;
             }
 
             return true;
         }
 
-        private static char[][] Transpose(char[][] original)
-        {
-            var transposed = new List<char[]>();
-
-            for (int i = 0; i < original[0].Length; i++)
-            {
-                transposed.Add(original.Select(originalArray => originalArray[i]).ToArray());
-            }
-
-            return transposed.ToArray();
-        }
     }
 }
